@@ -6,6 +6,7 @@
 * Copyright 2018-2023 codecalm.net Paweł Kuna
 * Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 @charset "UTF-8";
 :root,
 [data-bs-theme=light] {
@@ -132,14 +133,14 @@
   --tblr-black-rgb: 0, 0, 0;
   --tblr-body-color-rgb: 29, 39, 59;
   --tblr-body-bg-rgb: 241, 245, 249;
-  --tblr-font-sans-serif:    -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  --tblr-font-sans-serif:   'Roboto Condensed', sans-serif;
   --tblr-font-monospace:  Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   --tblr-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --tblr-body-font-family: var(--tblr-font-sans-serif);
   --tblr-body-font-size: 0.875rem;
-  --tblr-body-font-weight: 400;
+  --tblr-body-font-weight: 100;
   --tblr-body-line-height: 1.4285714286;
-  --tblr-body-color: #1d273b;
+  --tblr-body-color: #626977;
   --tblr-emphasis-color: #000000;
   --tblr-emphasis-color-rgb: 0, 0, 0;
   --tblr-secondary-color: rgba(29, 39, 59, 0.75);

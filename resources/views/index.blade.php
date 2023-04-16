@@ -7,7 +7,7 @@
     <div class="row m-1">
       <div class="col-12">
         <button class="btn btn-primary" id="swalButton">Sweet alert</button>
-        <button class="btn btn-pink" data-bs-toggle="modal" data-bs-target="#modal-simple">Simple Modal</button>
+        <button class="btn btn-pink" data-bs-toggle="modal" data-bs-target="#modal-simple">Simple Modal Noblur</button>
         <button class="btn btn-red" data-bs-toggle="modal" data-bs-target="#modal-danger">Danger Modal</button>
         <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-success">Danger Success</button>
         <button class="btn btn-lime" data-bs-toggle="modal" data-bs-target="#modal-form">Form Modal</button>
@@ -17,7 +17,7 @@
 @endsection
 
 @section('modals')
-  <div class="modal modal-blur fade" id="modal-simple" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-hidden="true" tabindex="-1">
+  <div class="modal fade" id="modal-simple" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-hidden="true" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
