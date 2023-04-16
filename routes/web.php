@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    Alert::toast('Sweet Alert 2 Ready!', 'success')->width('320px');
+    return view('index');
 });
