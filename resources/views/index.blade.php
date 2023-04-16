@@ -3,14 +3,51 @@
 @section('title', 'Index')
 
 @section('content')
-  <div class="container-fluid">
-    <div class="row m-1">
-      <div class="col-12">
-        <button class="btn btn-primary" id="swalButton">Sweet alert</button>
-        <button class="btn btn-pink" data-bs-toggle="modal" data-bs-target="#modal-simple">Simple Modal Noblur</button>
-        <button class="btn btn-red" data-bs-toggle="modal" data-bs-target="#modal-danger">Danger Modal</button>
-        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-success">Danger Success</button>
-        <button class="btn btn-lime" data-bs-toggle="modal" data-bs-target="#modal-form">Form Modal</button>
+  <div class="page-wrapper">
+    <!-- Page header -->
+    <div class="page-header d-print-none">
+      <div class="container-fluid">
+        <div class="row g-2 align-items-center">
+          <div class="col">
+            <!-- Page pre-title -->
+            <div class="page-pretitle">
+              Overview
+            </div>
+            <h2 class="page-title">
+              Dashboard
+            </h2>
+          </div>
+          <!-- Page title actions -->
+          <div class="ms-auto d-print-none col-auto">
+            <div class="btn-list">
+              <a href="#" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-form">
+                <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 5l0 14"></path>
+                  <path d="M5 12l14 0"></path>
+                </svg>
+                New post
+              </a>
+              <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
+                <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 5l0 14"></path>
+                  <path d="M5 12l14 0"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page body -->
+    <div class="page-body">
+      <div class="container-xl">
+
       </div>
     </div>
   </div>
@@ -68,7 +105,8 @@
     </div>
   </div>
 
-  <div class="modal modal-blur fade" id="modal-success" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-hidden="true" tabindex="-1">
+  <div class="modal modal-blur fade" id="modal-success" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-hidden="true"
+    tabindex="-1">
     <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
       <div class="modal-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -210,6 +248,9 @@
 @endsection
 
 @push('scripts')
+  <script>
+    hljs.highlightAll();
+  </script>
   <script>
     $(document).ready(function() {
       $('#swalButton').on('click', function() {

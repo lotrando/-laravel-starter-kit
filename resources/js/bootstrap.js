@@ -1,7 +1,9 @@
 window._ = require('lodash');
 
 window.$ = require('jquery');
-window.Swal = require('sweetalert2')
+window.Swal = require('sweetalert2');
+hljs = require('highlight.js/lib/common');
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
