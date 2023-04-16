@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    Alert::toast('Sweet Alert 2 Ready!', 'success')->width('320px');
     return view('index');
 });
+
+Route::get('/swal', function () {
+    Alert::toast('Sweet Alert 2 Ready!', 'success')->width('320px');
+    return view('index');
+})->name('swal');
